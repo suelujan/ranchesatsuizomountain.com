@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Discover Ranches at Suizo Mountain — expansive acreage, wide-open skies, and room to create your own legacy. Inquire about available parcels.">
+<title>Ranches at Suizo Mountain | Your Land. Your Legacy.</title>
+<style>
+:root{--sand:#e9dfcd;--cream:#f7f3eb;--ink:#252a22;--olive:#4d5942;--rust:#a55f3f;--muted:#6e7168}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{color:inherit}.topbar{background:var(--ink);color:#f7f3eb;text-align:center;padding:9px 18px;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase}
+header{position:absolute;top:39px;left:0;right:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:26px 7%;color:white}
+.brand{font-family:Georgia,serif;letter-spacing:.12em;text-transform:uppercase;font-size:1.02rem;line-height:1.35}.brand span{display:block;font-family:Arial,sans-serif;font-size:.62rem;letter-spacing:.28em;margin-top:5px}
+nav{display:flex;gap:26px;align-items:center;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}nav a{text-decoration:none}nav a:hover{text-decoration:underline}
+.hero{min-height:760px;height:94vh;max-height:1000px;position:relative;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(20,26,21,.72),rgba(20,26,21,.2)),url('IMG_4932.jpeg') center 52%/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(16,22,18,.48),transparent 45%);pointer-events:none}
+.hero-content{position:relative;z-index:1;width:min(850px,86%);margin:70px auto 0}
+.eyebrow{font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:#e6d2b1}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.08}
+h1{font-size:clamp(3rem,7vw,6.4rem);letter-spacing:.015em;margin:22px 0 24px;max-width:850px}
+.hero p{font-size:1.12rem;max-width:550px;color:#f3eee5}
+.btn{display:inline-block;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;padding:15px 23px;border:1px solid var(--rust);background:var(--rust);color:#fff;margin-top:20px;transition:.2s}
+.btn:hover{background:#874b31}.btn.outline{background:transparent;border-color:rgba(255,255,255,.75);margin-left:10px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);background:var(--olive);color:white;padding:30px 7%;gap:22px;text-align:center}
+.fact strong{display:block;font:2rem Georgia,serif;margin-bottom:4px}.fact span{font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;color:#e3e1d5}
+section{padding:100px 7%}.intro{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+.section-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--rust);margin-bottom:16px}
+h2{font-size:clamp(2.2rem,4vw,3.7rem);margin:0 0 22px}
+.intro p,.details p{color:#55594f;font-size:1.02rem}
+.photo{min-height:450px;background:url('IMG_1510.jpeg') center/cover}
+.details{background:#e9dfcd}
+.details-head{max-width:720px;margin-bottom:45px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--cream);padding:30px 26px;border-top:3px solid var(--rust)}
+.card h3{font-size:1.55rem;margin:0 0 12px}.card p{font-size:.94rem;margin:0}
+.gallery{padding-bottom:90px}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:36px}
+.gallery-img{min-height:320px;background-position:center;background-size:cover}.gallery-img:first-child{background-image:url('IMG_1518.jpeg')}
+.gallery-img:last-child{background-image:url('IMG_1513.jpeg')}
+.quote{background:var(--olive);color:#fff;text-align:center;padding:86px 7%}.quote h2{max-width:850px;margin:0 auto 16px}.quote p{color:#e2e3d8;letter-spacing:.06em}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+.contact-panel{background:white;padding:34px}
+.contact-panel label{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;margin:14px 0 6px}
+input,textarea,select{width:100%;padding:12px;border:1px solid #d4d0c7;background:#fcfbf8;font:inherit;border-radius:0}
+textarea{min-height:100px;resize:vertical}.contact-panel .btn{cursor:pointer;width:100%;font:inherit;font-size:.76rem}
+.phone{font:2rem Georgia,serif;color:var(--olive);text-decoration:none}
+footer{background:var(--ink);color:#e9e3d8;padding:28px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.78rem}
+footer a{color:#e9e3d8}
+.note{font-size:.78rem!important;color:var(--muted)!important}
+@media(max-width:760px){header{padding:20px 6%;align-items:flex-start}.brand{font-size:.8rem}nav{gap:12px;font-size:.65rem}nav a:not(.nav-cta){display:none}.hero{min-height:680px;height:85vh}.hero-content{margin-top:80px}.facts{padding:24px 5%;gap:8px}.fact strong{font-size:1.45rem}.fact span{font-size:.6rem}.intro,.contact{grid-template-columns:1fr}.intro{gap:30px}.photo{min-height:300px}section{padding:70px 6%}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}.gallery-img{min-height:260px}.contact-panel{padding:24px}}
+</style>
+</head>
+<body>
+<div class="topbar">A rare opportunity to make a place your own</div>
+<header>
+  <div class="brand">Ranches at Suizo Mountain<span>Southern Arizona · Wide Open Spaces</span></div>
+  <nav><a href="#the-land">The Land</a><a href="#details">Property Details</a><a class="nav-cta" href="#inquire">Inquire</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Space to roam. Room to dream.</div>
+    <h1>Your Land.<br>Your Legacy.</h1>
+    <p>Discover the freedom of expansive acreage, open skies, and the opportunity to shape a place that’s truly your own.</p>
+    <a class="btn" href="#inquire">Explore Available Parcels</a><a class="btn outline" href="#the-land">Discover the Land</a>
+  </div>
+</section>
+<div class="facts">
+  <div class="fact"><strong>13+ Acres</strong><span>Expansive Parcels</span></div>
+  <div class="fact"><strong>17+ Acres</strong><span>Room to Spread Out</span></div>
+  <div class="fact"><strong>Power</strong><span>To Site</span></div>
+</div>
+<section class="intro" id="the-land">
+  <div>
+    <div class="section-label">A place of your own</div>
+    <h2>Make room for a bigger vision.</h2>
+    <p>Ranches at Suizo Mountain offers the chance to own a generous piece of the Southern Arizona landscape. Imagine the possibilities: a private retreat, a future homesite, or simply the luxury of having room to breathe.</p>
+    <p>With expansive 13+ and 17+ acre parcels, there’s space to plan for the life you want—on your own terms.</p>
+    <a class="btn" href="#inquire">Request Information</a>
+  </div>
+  <div class="photo" role="img" aria-label="Mountain landscape"></div>
+</section>
+<section class="details" id="details">
+  <div class="details-head">
+    <div class="section-label">The property</div>
+    <h2>Room to make it yours.</h2>
+    <p>Explore the key features of Ranches at Suizo Mountain and get in touch for current parcel availability and property-specific details.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><h3>Expansive Acreage</h3><p>Choose from parcels offering 13+ and 17+ acres of space and possibility.</p></article>
+    <article class="card"><h3>Power to Site</h3><p>Power is available to the site. Contact us for details about the parcel you’re considering.</p></article>
+    <article class="card"><h3>Water on Select Parcels</h3><p>Water is available on select parcels. Ask us to confirm availability for a specific property.</p></article>
+  </div>
+</section>
+<section class="gallery">
+  <div class="section-label">Picture your possibilities</div>
+  <h2>Open space. Endless potential.</h2>
+  <div class="gallery-grid"><div class="gallery-img" role="img" aria-label="Open mountain scenery"></div><div class="gallery-img" role="img" aria-label="Desert woodland scenery"></div></div>
+  <p class="note">Photographs shown are from Ranches at Suizo Mountain.</p>
+  <div class="gallery-grid" style="grid-template-columns:repeat(3,1fr);margin-top:18px">
+    <div class="gallery-img" style="background-image:url('IMG_7357.jpeg');min-height:250px" role="img" aria-label="Ranch sunset with saguaro cactus"></div>
+    <div class="gallery-img" style="background-image:url('IMG_7367.jpeg');min-height:250px" role="img" aria-label="Desert sunset over the ranch"></div>
+    <div class="gallery-img" style="background-image:url('IMG_1496.jpeg');min-height:250px" role="img" aria-label="Sonoran Desert vegetation and mountain views"></div>
+  </div>
+</section>
+<section class="quote">
+  <h2>Some places aren’t just bought. They become part of your story.</h2>
+  <p>RANCHES AT SUIZO MOUNTAIN</p>
+  <a class="btn" href="#inquire">Start a Conversation</a>
+</section>
+<section class="contact" id="inquire">
+  <div>
+    <div class="section-label">Inquire today</div>
+    <h2>Your next chapter starts here.</h2>
+    <p>Interested in available parcels or want to learn more? Call or send an inquiry and we’ll help you take the next step.</p>
+    <p><a class="phone" href="tel:+15204060075">520-406-0075</a></p>
+    <p class="note">The inquiry form is a design preview and is not connected to an email service yet. Add a form integration before publishing so submissions reach you.</p>
+  </div>
+  <div class="contact-panel">
+    <form onsubmit="event.preventDefault();document.getElementById('form-message').textContent='Thank you for your interest. Please call 520-406-0075 to complete your inquiry; this preview form does not send messages yet.';">
+      <label for="name">Your Name</label><input id="name" name="name" autocomplete="name" required>
+      <label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="interest">What are you interested in?</label>
+      <select id="interest" name="interest"><option>13+ acre parcel</option><option>17+ acre parcel</option><option>General information</option><option>Schedule a visit</option></select>
+      <label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you'd like to know…"></textarea>
+      <button class="btn" type="submit">Send Inquiry</button>
+      <p id="form-message" class="note" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div>© <span id="year">2026</span> Ranches at Suizo Mountain</div><div>Your Land. Your Legacy. &nbsp; | &nbsp; <a href="tel:+15204060075">520-406-0075</a></div></footer>
+</body>
+</html>
