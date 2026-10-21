@@ -33,8 +33,8 @@ h2{font-size:clamp(2.2rem,4vw,3.7rem);margin:0 0 22px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--cream);padding:30px 26px;border-top:3px solid var(--rust)}
 .card h3{font-size:1.55rem;margin:0 0 12px}.card p{font-size:.94rem;margin:0}
-.parcel-map-section{background:#f7f3eb}.parcel-map-wrap{max-width:1200px;margin:0 auto}.parcel-map-image{display:block;width:100%;height:auto;border:1px solid #d4c8b4;box-shadow:0 12px 32px rgba(37,42,34,.12)}.parcel-map-caption{max-width:900px;margin:18px auto 0;color:#6e7168;font-size:.82rem}.gallery{padding-bottom:90px}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:36px}
-.gallery-img{min-height:320px;background-position:center;background-size:cover}.gallery-img:first-child{background-image:url('IMG_1518.jpeg')}
+.parcel-map-section{background:#f7f3eb}.parcel-map-wrap{max-width:1200px;margin:0 auto}.parcel-map-image{display:block;width:100%;height:auto;border:1px solid #d4c8b4;box-shadow:0 12px 32px rgba(37,42,34,.12)}.parcel-map-caption{max-width:900px;margin:18px auto 0;color:#6e7168;font-size:.82rem}.gallery{padding-bottom:90px}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:36px}.gallery-photo{display:block;width:100%;height:auto;object-fit:contain;align-self:start}.gallery-grid-three{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:18px}
+.gallery-img{min-height:0;height:auto;aspect-ratio:auto;background-position:center;background-size:contain;background-repeat:no-repeat}.gallery-img:first-child{background-image:url('IMG_1518.jpeg')}
 .gallery-img:last-child{background-image:url('IMG_1513.jpeg')}
 .quote{background:var(--olive);color:#fff;text-align:center;padding:86px 7%}.quote h2{max-width:850px;margin:0 auto 16px}.quote p{color:#e2e3d8;letter-spacing:.06em}
 
@@ -54,7 +54,7 @@ textarea{min-height:100px;resize:vertical}.contact-panel .btn{cursor:pointer;wid
 footer{background:var(--ink);color:#e9e3d8;padding:28px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.78rem}
 footer a{color:#e9e3d8}
 .note{font-size:.78rem!important;color:var(--muted)!important}
-@media(max-width:760px){header{padding:20px 6%;align-items:flex-start}.brand{font-size:.8rem}.brand-logo{width:180px;max-width:48vw}nav{gap:12px;font-size:.65rem}nav a:not(.nav-cta){display:none}.hero{min-height:680px;height:85vh}.hero-content{margin-top:80px}.facts{padding:24px 5%;gap:8px}.fact strong{font-size:1.45rem}.fact span{font-size:.6rem}.intro,.contact{grid-template-columns:1fr}.intro{gap:30px}.photo{min-height:300px}section{padding:70px 6%}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}.gallery-img{min-height:260px}.contact-panel{padding:24px}}
+@media(max-width:760px){header{padding:20px 6%;align-items:flex-start}.brand{font-size:.8rem}.brand-logo{width:180px;max-width:48vw}nav{gap:12px;font-size:.65rem}nav a:not(.nav-cta){display:none}.hero{min-height:680px;height:85vh}.hero-content{margin-top:80px}.facts{padding:24px 5%;gap:8px}.fact strong{font-size:1.45rem}.fact span{font-size:.6rem}.intro,.contact{grid-template-columns:1fr}.intro{gap:30px}.photo{min-height:300px}section{padding:70px 6%}.cards{grid-template-columns:1fr}.gallery-grid,.gallery-grid-three{grid-template-columns:1fr}.gallery-img{min-height:0}.contact-panel{padding:24px}}
 </style>
 </head>
 <body>
@@ -117,12 +117,12 @@ footer a{color:#e9e3d8}
 <section class="gallery">
   <div class="section-label">Picture your possibilities</div>
   <h2>Open space. Endless potential.</h2>
-  <div class="gallery-grid"><div class="gallery-img" role="img" aria-label="Open mountain scenery"></div><div class="gallery-img" role="img" aria-label="Desert woodland scenery"></div></div>
+  <div class="gallery-grid gallery-grid-main"><img class="gallery-photo" src="IMG_1518.jpeg" alt="Sonoran Desert sunset at Ranches at Suizo Mountain"><img class="gallery-photo" src="IMG_1513.jpeg" alt="Desert woodland and saguaro at Ranches at Suizo Mountain"></div>
   <p class="note">Photographs shown are from Ranches at Suizo Mountain.</p>
-  <div class="gallery-grid" style="grid-template-columns:repeat(3,1fr);margin-top:18px">
-    <div class="gallery-img" style="background-image:url('IMG_7357.jpeg');min-height:250px" role="img" aria-label="Ranch sunset with saguaro cactus"></div>
-    <div class="gallery-img" style="background-image:url('IMG_7367.jpeg');min-height:250px" role="img" aria-label="Desert sunset over the ranch"></div>
-    <div class="gallery-img" style="background-image:url('IMG_1496.jpeg');min-height:250px" role="img" aria-label="Sonoran Desert vegetation and mountain views"></div>
+  <div class="gallery-grid gallery-grid-three">
+    <img class="gallery-photo" src="IMG_7357.jpeg" alt="Ranch sunset with saguaro cactus">
+    <img class="gallery-photo" src="IMG_7367.jpeg" alt="Desert sunset over the ranch">
+    <img class="gallery-photo" src="IMG_1496.jpeg" alt="Sonoran Desert vegetation and mountain views">
   </div>
 </section>
 <section class="quote">
