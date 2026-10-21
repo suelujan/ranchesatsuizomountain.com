@@ -33,7 +33,7 @@ h2{font-size:clamp(2.2rem,4vw,3.7rem);margin:0 0 22px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--cream);padding:30px 26px;border-top:3px solid var(--rust)}
 .card h3{font-size:1.55rem;margin:0 0 12px}.card p{font-size:.94rem;margin:0}
-.gallery{padding-bottom:90px}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:36px}
+.parcel-map-section{background:#f7f3eb}.parcel-map-wrap{max-width:1200px;margin:0 auto}.parcel-map-image{display:block;width:100%;height:auto;border:1px solid #d4c8b4;box-shadow:0 12px 32px rgba(37,42,34,.12)}.parcel-map-caption{max-width:900px;margin:18px auto 0;color:#6e7168;font-size:.82rem}.gallery{padding-bottom:90px}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:36px}
 .gallery-img{min-height:320px;background-position:center;background-size:cover}.gallery-img:first-child{background-image:url('IMG_1518.jpeg')}
 .gallery-img:last-child{background-image:url('IMG_1513.jpeg')}
 .quote{background:var(--olive);color:#fff;text-align:center;padding:86px 7%}.quote h2{max-width:850px;margin:0 auto 16px}.quote p{color:#e2e3d8;letter-spacing:.06em}
@@ -53,7 +53,7 @@ footer a{color:#e9e3d8}
 <div class="topbar">A rare opportunity to make a place your own</div>
 <header>
   <div class="brand">Ranches at Suizo Mountain<span>Southern Arizona · Wide Open Spaces</span></div>
-  <nav><a href="#the-land">The Land</a><a href="#details">Property Details</a><a class="nav-cta" href="#inquire">Inquire</a></nav>
+  <nav><a href="#the-land">The Land</a><a href="#details">Property Details</a><a href="#parcel-map">Parcel Map</a><a class="nav-cta" href="#inquire">Inquire</a></nav>
 </header>
 <main>
 <section class="hero">
@@ -91,6 +91,21 @@ footer a{color:#e9e3d8}
     <article class="card"><h3>Water on Select Parcels</h3><p>Water is available on select parcels. Ask us to confirm availability for a specific property.</p></article>
   </div>
 </section>
+
+<section class="parcel-map-section" id="parcel-map">
+  <div class="details-head">
+    <div class="section-label">Explore the property</div>
+    <h2>Find your place at Suizo Mountain.</h2>
+    <p>View the parcel layout and the acreage information shown on the property map. Contact us to confirm current availability and details for a specific parcel.</p>
+  </div>
+  <div class="parcel-map-wrap">
+    <a href="parcel-map.png" target="_blank" rel="noopener" aria-label="Open the parcel map at full size">
+      <img class="parcel-map-image" src="parcel-map.png" alt="Ranches at Suizo Mountain parcel map showing parcel boundaries, acreage, buildable areas, and Park Link Road">
+    </a>
+    <p class="parcel-map-caption">For marketing and general orientation only. Confirm legal boundaries, dimensions, easements, buildable areas, utilities, and availability with the official survey and seller before making a purchase decision.</p>
+  </div>
+</section>
+
 <section class="gallery">
   <div class="section-label">Picture your possibilities</div>
   <h2>Open space. Endless potential.</h2>
