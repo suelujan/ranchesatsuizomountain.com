@@ -164,10 +164,14 @@ footer a{color:#e9e3d8}
     <h2>Your next chapter starts here.</h2>
     <p>Interested in available parcels or want to learn more? Call or send an inquiry and we’ll help you take the next step.</p>
     <p><a class="phone" href="tel:+15204060075">520-406-0075</a></p>
-    <p class="note">The inquiry form is a design preview and is not connected to an email service yet. Add a form integration before publishing so submissions reach you.</p>
+    <p class="note">Send us a message about the available parcels. We’ll follow up using the contact information you provide.</p>
   </div>
   <div class="contact-panel">
-    <form onsubmit="event.preventDefault();document.getElementById('form-message').textContent='Thank you for your interest. Please call 520-406-0075 to complete your inquiry; this preview form does not send messages yet.';">
+    <form action="https://formsubmit.co/tomlujan@comcast.net" method="POST">
+      <input type="hidden" name="_subject" value="New Ranches at Suizo Mountain Website Inquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://ranchesatsuizomountain.com/thank-you.html">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <label for="name">Your Name</label><input id="name" name="name" autocomplete="name" required>
       <label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" required>
       <label for="interest">What are you interested in?</label>
